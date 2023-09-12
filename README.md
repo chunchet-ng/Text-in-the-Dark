@@ -8,7 +8,7 @@ Chun Chet Ng*, Che-Tsung Lin*, Zhi Qin Tan, Wan Jun Nah, Xinyu Wang, Jie Long Ke
 
 *Equal Contribution
 
-> ***The manuscript is currently under review. This work is an extension of our ICPR 2022 paper, Extremely Low-Light Image Enhancement with Scene Text Restoration.***
+> ***The manuscript is currently under review. This work is an extension of our ICPR 2022 paper, [Extremely Low-Light Image Enhancement with Scene Text Restoration](https://ieeexplore.ieee.org/document/9956716).***
 
 [Project Page]() | [Paper]() | [Text in the Dark Dataset](#text-in-the-dark-dataset) | [Extremely Low-Light Text Image Enhancement Model](#extremely-low-light-text-image-enhancement-model-elite) | [Bibtex](#citation)
 
@@ -35,38 +35,38 @@ Please note that texts of "###" class are ignored during evaluation.
 #### SID-Sony Set:
 | Subset | Images | Legible Text | Illegible Text | Total Text |
 | :--- | :----: | :----: | :----: | :----: |
-| Train | 161 | 5937 | 2128 | 8065 |
+| Train | 161 | 5,937 | 2,128 | 8,065 |
 | Test | 50 | 611 | 359 | 970 |
 
 #### SID-Fuji Set:
 | Subset | Images | Legible Text | Illegible Text | Total Text |
 | :--- | :----: | :----: | :----: | :----: |
-| Train | 135 | 6213 | 4534 | 10747 |
-| Test | 41 | 1018 | 1083 | 2101 |
+| Train | 135 | 6,213 | 4,534 | 10,747 |
+| Test | 41 | 1,018 | 1,083 | 2,101 |
 
 #### LOL:
 | Subset | Images | Legible Text | Illegible Text | Total Text |
 | :--- | :----: | :----: | :----: | :----: |
-| Train | 485 | 613 | 1423 | 2036 |
+| Train | 485 | 613 | 1,423 | 2,036 |
 | Test | 15 | 28 | 45 | 73 |
 
 ### Statistics - Short Exposure Images
 #### SID-Sony Set:
 | Subset | Images | Legible Text | Illegible Text | Total Text |
 | :--- | :----: | :----: | :----: | :----: |
-| Train | 280 | 10396 | 3866 | 14262 |
-| Test | 598 | 8210 | 4976 | 13186 |
+| Train | 280 | 10,396 | 3,866 | 14,262 |
+| Test | 598 | 8,210 | 4,976 | 13,186 |
 
 #### SID-Fuji Set:
 | Subset | Images | Legible Text | Illegible Text | Total Text |
 | :--- | :----: | :----: | :----: | :----: |
-| Train | 286 | 13540 | 10316 | 23856 |
-| Test | 524 | 12768 | 14036 | 26804 |
+| Train | 286 | 13,540 | 10,316 | 23,856 |
+| Test | 524 | 12,768 | 14,036 | 26,804 |
 
 #### LOL:
 | Subset | Images | Legible Text | Illegible Text | Total Text |
 | :--- | :----: | :----: | :----: | :----: |
-| Train | 485 | 613 | 1423 | 2036 |
+| Train | 485 | 613 | 1,423 | 2,036 |
 | Test | 15 | 28 | 45 | 73 |
 
 
@@ -74,7 +74,7 @@ Please note that texts of "###" class are ignored during evaluation.
 > ***The training and testing code for the proposed method will be released upon the acceptance of the manuscript. Please stay tuned!***
 
 ## Citation
-If you wish to cite the paper published at ICPR 2022, Extremely Low-Light Image Enhancement with Scene Text Restoration:
+If you wish to cite the paper published at ICPR 2022, [Extremely Low-Light Image Enhancement with Scene Text Restoration](https://ieeexplore.ieee.org/document/9956716):
 
 ```bibtex
 @inproceedings{icdar2021_ictext,
