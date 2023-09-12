@@ -33,38 +33,38 @@ Please note that texts of "###" class are ignored during evaluation.
 
 ### Statistics - Long Exposure Images
 #### SID-Sony Set:
-| Subset | Images | Legit Text | Illegible Text | Total Text |
+| Subset | Images | Legible Text | Illegible Text | Total Text |
 | :--- | :----: | :----: | :----: | :----: |
 | Train | 161 | 5937 | 2128 | 8065 |
 | Test | 50 | 611 | 359 | 970 |
 
 #### SID-Fuji Set:
-| Subset | Images | Legit Text | Illegible Text | Total Text |
+| Subset | Images | Legible Text | Illegible Text | Total Text |
 | :--- | :----: | :----: | :----: | :----: |
 | Train | 135 | 6213 | 4534 | 10747 |
 | Test | 41 | 1018 | 1083 | 2101 |
 
 #### LOL:
-| Subset | Images | Legit Text | Illegible Text | Total Text |
+| Subset | Images | Legible Text | Illegible Text | Total Text |
 | :--- | :----: | :----: | :----: | :----: |
 | Train | 485 | 613 | 1423 | 2036 |
 | Test | 15 | 28 | 45 | 73 |
 
 ### Statistics - Short Exposure Images
 #### SID-Sony Set:
-| Subset | Images | Legit Text | Illegible Text | Total Text |
+| Subset | Images | Legible Text | Illegible Text | Total Text |
 | :--- | :----: | :----: | :----: | :----: |
 | Train | 280 | 10396 | 3866 | 14262 |
 | Test | 598 | 8210 | 4976 | 13186 |
 
 #### SID-Fuji Set:
-| Subset | Images | Legit Text | Illegible Text | Total Text |
+| Subset | Images | Legible Text | Illegible Text | Total Text |
 | :--- | :----: | :----: | :----: | :----: |
 | Train | 286 | 13540 | 10316 | 23856 |
 | Test | 524 | 12768 | 14036 | 26804 |
 
 #### LOL:
-| Subset | Images | Legit Text | Illegible Text | Total Text |
+| Subset | Images | Legible Text | Illegible Text | Total Text |
 | :--- | :----: | :----: | :----: | :----: |
 | Train | 485 | 613 | 1423 | 2036 |
 | Test | 15 | 28 | 45 | 73 |
