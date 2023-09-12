@@ -8,7 +8,7 @@ Chun Chet Ng*, Che-Tsung Lin*, Zhi Qin Tan, Wan Jun Nah, Xinyu Wang, Jie Long Ke
 
 *Equal Contribution
 
-***The manuscript is currently under review. This work is an extension of our ICPR 2022 paper, Extremely Low-Light Image Enhancement with Scene Text Restoration.***
+> ***The manuscript is currently under review. This work is an extension of our ICPR 2022 paper, Extremely Low-Light Image Enhancement with Scene Text Restoration.***
 
 [Project Page]() | [Paper]() | [Text in the Dark Dataset](#text-in-the-dark-dataset) | [Extremely Low-Light Text Image Enhancement Model](#extremely-low-light-text-image-enhancement-model-elite) | [Bibtex](#citation)
 
@@ -17,10 +17,61 @@ Text extraction in extremely low-light images is challenging. Although existing 
 emphasize low-level scene text features. Additionally, we present a Supervised Deep Curve Estimation model to synthesize extremely low-light images based on the public ICDAR15 (IC15) dataset. We also labeled texts in the extremely low-light See In the Dark (SID) and ordinary LOw-Light (LOL) datasets to benchmark extremely low-light scene text tasks. Extensive experiments prove our model outperforms state-of-the-art methods on all datasets.
 
 ## Text in the Dark Dataset
-***The Text in the Dark dataset will be released upon the acceptance of the manuscript. Please stay tuned!***
+> ***The Text in the Dark dataset will be released upon the acceptance of the manuscript. Please stay tuned!***
+
+The Text in the Dark dataset is created based on the combination of the following low light datasets:
+
+1. See in the Dark (SID) dataset - Sony Set
+2. See in the Dark (SID) dataset - Fuji Set
+3. LOw Light (LOL) dataset
+
+The annotation format for this dataset is following the ICDAR's annotations format:
+
+``<x1,y1,x2,y2,x3,y3,x4,y4,text_class> or <L,T,R,B,text_class>, text_class can be "Text" or "###"``
+
+Please note that texts of "###" class are ignored during evaluation.
+
+### Statistics - Long Exposure Images
+#### SID-Sony Set:
+| Subset | Images | Legit Text | Illegible Text | Total Text |
+| :--- | :----: | :----: | :----: | :----: |
+| Train | 161 | 5937 | 2128 | 8065 |
+| Test | 50 | 611 | 359 | 970 |
+
+#### SID-Fuji Set:
+| Subset | Images | Legit Text | Illegible Text | Total Text |
+| :--- | :----: | :----: | :----: | :----: |
+| Train | 135 | 6213 | 4534 | 10747 |
+| Test | 41 | 1018 | 1083 | 2101 |
+
+#### LOL:
+| Subset | Images | Legit Text | Illegible Text | Total Text |
+| :--- | :----: | :----: | :----: | :----: |
+| Train | 485 | 613 | 1423 | 2036 |
+| Test | 15 | 28 | 45 | 73 |
+
+### Statistics - Short Exposure Images
+#### SID-Sony Set:
+| Subset | Images | Legit Text | Illegible Text | Total Text |
+| :--- | :----: | :----: | :----: | :----: |
+| Train | 280 | 10396 | 3866 | 14262 |
+| Test | 598 | 8210 | 4976 | 13186 |
+
+#### SID-Fuji Set:
+| Subset | Images | Legit Text | Illegible Text | Total Text |
+| :--- | :----: | :----: | :----: | :----: |
+| Train | 286 | 13540 | 10316 | 23856 |
+| Test | 524 | 12768 | 14036 | 26804 |
+
+#### LOL:
+| Subset | Images | Legit Text | Illegible Text | Total Text |
+| :--- | :----: | :----: | :----: | :----: |
+| Train | 485 | 613 | 1423 | 2036 |
+| Test | 15 | 28 | 45 | 73 |
+
 
 ## Extremely Low-Light Text Image Enhancement Model (ELITE)
-***The training and testing code for the proposed method will be released upon the acceptance of the manuscript. Please stay tuned!***
+> ***The training and testing code for the proposed method will be released upon the acceptance of the manuscript. Please stay tuned!***
 
 ## Citation
 If you wish to cite the paper published at ICPR 2022, Extremely Low-Light Image Enhancement with Scene Text Restoration:
@@ -43,7 +94,7 @@ If you wish to cite the paper published at ICPR 2022, Extremely Low-Light Image 
 
 If you wish to cite the lastest version of Text in the Dark dataset and our proposed method:
 
-***Our paper is currently under review. We will update this section when it is published.***
+> ***Our paper is currently under review. We will update this section when it is published.***
 
 ## Feedback
 We welcome all suggestions and opinions (both positive and negative) on this work. Please contact us by sending an email to `ngchunchet95 at gmail.com` or `cs.chan at um.edu.my`.
