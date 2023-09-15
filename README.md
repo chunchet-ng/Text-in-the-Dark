@@ -77,7 +77,7 @@ Please note that texts of "###" class are ignored during evaluation.
 If you wish to cite the paper published at ICPR 2022, [Extremely Low-Light Image Enhancement with Scene Text Restoration](https://ieeexplore.ieee.org/document/9956716):
 
 ```bibtex
-@inproceedings{icdar2021_ictext,
+@inproceedings{icpr2022_ellie,
   author={Hsu, Po-Hao
   and Lin, Che-Tsung
   and Ng, Chun Chet
