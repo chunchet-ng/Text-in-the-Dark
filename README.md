@@ -10,7 +10,7 @@ Chun Chet Ng*, Che-Tsung Lin*, Zhi Qin Tan, Wan Jun Nah, Xinyu Wang, Jie Long Ke
 
 > ***The manuscript is currently under review. This work is an extension of our ICPR 2022 paper, [Extremely Low-Light Image Enhancement with Scene Text Restoration](https://ieeexplore.ieee.org/document/9956716).***
 
-[Project Page]() | [Paper]() | [Text in the Dark Dataset](#text-in-the-dark-dataset) | [Extremely Low-Light Text Image Enhancement Model](#extremely-low-light-text-image-enhancement-model-elite) | [Bibtex](#citation)
+[Project Page](https://chunchet-ng.github.io/Text-in-the-Dark/) | [Paper]() | [Text in the Dark Dataset](#text-in-the-dark-dataset) | [Extremely Low-Light Text Image Enhancement Model](#extremely-low-light-text-image-enhancement-model-elite) | [Bibtex](#citation)
 
 ## Abstract:
 Text extraction in extremely low-light images is challenging. Although existing low-light image enhancement methods can enhance images as preprocessing before text extraction, they do not focus on scene text. Further research is also hindered by the lack of extremely low-light text datasets. Thus, we propose a novel extremely low-light image enhancement framework with an edge-aware attention module to focus on scene text regions. Our method is trained with text detection and edge reconstruction losses to
