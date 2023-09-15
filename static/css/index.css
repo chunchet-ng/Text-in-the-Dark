@@ -1,0 +1,45 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.jumbotron {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.title {
+  font-weight: bold;
+  padding-bottom: 1rem;
+  font-family: 'Google Sans', sans-serif;
+  font-size: 2.5rem;
+}
+
+.footer .icon-link {
+    font-size: 25px;
+    color: #000;
+}
+
+.teaser .hero-body {
+  padding-top: 0;
+  padding-bottom: 3rem;
+}
+
+.author-block {
+  display: inline-block;
+  padding: 0.2rem;
+  font-size: 1.2rem;
+  font-family: 'Google Sans', sans-serif;
+}
+
+.author-block a {
+  text-decoration: none;
+}
+
+.author-block a:hover {
+    text-decoration: underline;
+}
+
+.tab {
+  display: inline-block;
+  margin-left: 15px;
+}

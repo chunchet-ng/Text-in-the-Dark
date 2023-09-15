@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Text in the Dark: Extremely Low-Light Text Image Enhancement">
+  <meta name="keywords" content="Text in the Dark, Extremely Low-Light Text Image Enhancement, OCR">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Text in the Dark: Extremely Low-Light Text Image Enhancement</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-PYVRSFMDRL');
+  </script> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="./static/css/all.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/enlight.ico">
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+          integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script defer src="./static/js/all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+          integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script defer src="./static/js/index.js"></script>
+
+</head>
+
+<body>
+  <div class="container pt-3">
+    <ul class="nav nav-pills justify-content-center gap-2">
+      <li class="nav-item">
+        <a class="btn btn-primary" href="https://chunchet-ng.github.io/" target="_blank">
+          <i class="fa-solid fa-house"></i>
+            Home
+        </a>
+      </li>
+      <li class="nav-item">
+        <div class="btn-group">
+          <button class="btn btn-outline-primary dropdown-toggle" type="button" 
+          data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            More Research
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="https://chunchet-ng.github.io/ICText-AGCL/" target="_blank">ICText AGCL</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-2 d-none d-sm-block"></div>
+        <h1 class="col-xs-12 col-md-8 text-center title">Text in the Dark: Extremely Low-Light Text Image Enhancement</h1>
+        <div class="col-2 d-none d-sm-block"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-4 d-none d-sm-block"></div>
+        <div class="col-xs-12 col-md-4 text-center publication-authors">
+          <span class="author-block">
+            <a href="https://scholar.google.com/citations?user=1lKI2vEAAAAJ" target="_blank">Chun Chet
+              Ng</a><sup>1,*</sup>,
+          </span>
+          <span class="author-block">
+            <a href="https://scholar.google.com/citations?user=UewYUXwAAAAJ" target="_blank">Che-Tsung
+              Lin</a><sup>2,*</sup>,
+          </span>
+          <span class="author-block">
+            <a href="https://scholar.google.com/citations?user=YEwTuToAAAAJ" target="_blank">Zhi Qin
+              Tan</a><sup>1</sup>,
+          </span>
+          <span class="author-block">
+            <a href="https://www.linkedin.com/in/wan-jun-nah" target="_blank">Wan Jun
+              Nah</a><sup>1</sup>,
+          </span>
+          <span class="author-block">
+            <a href="https://www.linkedin.com/in/xinyu-wang-023162253" target="_blank">Xinyu
+              Wang</a><sup>3</sup>,
+          </span>
+          <span class="author-block">
+            <a href="https://scholar.google.ca/citations?hl=en&user=fYKEYmUAAAAJ" target="_blank">Jie Long
+              Kew</a><sup>1</sup>,
+          </span>
+          <span class="author-block">
+            <a href="https://scholar.google.com/citations?user=QdUP0IQAAAAJ" target="_blank">Pohao
+              Hsu</a><sup>4</sup>,
+          </span>
+          <span class="author-block">
+            <a href="https://scholar.google.com/citations?user=LlybOXQAAAAJ" target="_blank">Shang Hong
+              Lai</a><sup>4</sup>,
+          </span>
+          <span class="author-block">
+            <a href="https://scholar.google.ca/citations?user=hKfga9oAAAAJ" target="_blank">Chee Seng
+              Chan</a><sup>1</sup>,
+          </span>
+          <span class="author-block">
+            <a href="https://scholar.google.ca/citations?user=Pmi5GEAAAAAJ" target="_blank">Christopher
+              Zach</a><sup>2</sup>
+          </span>
+        </div>
+        <div class="col-4 d-none d-sm-block"></div>
+      </div>
+
+      <div class="row p-3">
+        <div class="col-3 d-none d-sm-block"></div>
+        <div class="col-xs-12 col-md-6 text-center">
+          <span class="author-block"><sup>1</sup>Universiti Malaya, Kuala Lumpur, Malaysia</span><br />
+          <span class="author-block"><sup>2</sup>Chalmers University of Technology, Gothenburg, Sweden</span><br />
+          <span class="author-block"><sup>3</sup>The University of Adelaide, Adelaide, Australia</span><br />
+          <span class="author-block"><sup>4</sup>National Tsing Hua University, Hsinchu, Taiwan</span><br />
+          <span class="author-block"><sup>*</sup>Equal Contribution</span>
+        </div>
+        <div class="col-3 d-none d-sm-block"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-3 d-none d-sm-block"></div>
+        <div class="col-xs-12 col-md-6 d-grid gap-2 d-md-block text-center">
+            <a class="btn btn-outline-primary m-1">
+                <i class="fa-solid fa-file-pdf"></i>
+                Paper (Under Review)
+            </a>
+            <a class="btn btn-outline-primary m-1"
+              href="https://github.com/chunchet-ng/Text-in-the-Dark" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                GitHub Repo
+            </a>
+            <a class="btn btn-outline-primary m-1"
+              href="https://github.com/chunchet-ng/Text-in-the-Dark#text-in-the-dark-dataset" target="_blank">
+                <i class="fa-solid fa-images"></i>
+                Text in the Dark Dataset
+            </a>
+        </div>
+        <div class="col-3 d-none d-sm-block"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="jumbotron jumbotron-fluid bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col d-none d-sm-block"></div>
+        <div class="col-xs-12 col-md-8">
+          <h2 class="text-center title">Abstract</h1>
+          <p class="text-start">Text extraction in extremely low-light images is challenging. Although existing low-light image enhancement methods 
+            can enhance images as preprocessing before text extraction, they do not focus on scene text. Further research is also hindered by the 
+            lack of extremely low-light text datasets. Thus, we propose a novel extremely low-light image enhancement framework with an edge-aware 
+            attention module to focus on scene text regions. Our method is trained with text detection and edge reconstruction losses to emphasize 
+            low-level scene text features. Additionally, we present a Supervised Deep Curve Estimation model to synthesize extremely low-light 
+            images based on the public ICDAR15 (IC15) dataset. We also labeled texts in the extremely low-light See In the Dark (SID) and ordinary 
+            LOw-Light (LOL) datasets to benchmark extremely low-light scene text tasks. Extensive experiments prove our model outperforms 
+            state-of-the-art methods on all datasets.</p>
+        </div>
+        <div class="col d-none d-sm-block"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col d-none d-sm-block"></div>
+        <div class="col-xs-12 col-md-8">
+          <h2 class="text-center title">BibTeX</h1>
+          <p class="text-start">If you wish to cite the ICPR 2022 Extremely Low-Light Image Enhancement with Scene Text Restoration paper:</p>
+            <div class="text-primary border border-primary rounded p-3">
+              <p class="m-0">
+                <button class="btn btn-primary float-end ms-2" onclick="copy_text()">
+                  <i class="fa-solid fa-copy"></i>
+                </button>
+                <span id="bibtex">
+                @inproceedings{icdar2021_ictext,<br/>
+                  <span class="tab"></span>author={Hsu, Po-Hao and Lin, Che-Tsung and Ng, Chun Chet and Long Kew, Jie<br/>
+                  <span class="tab"></span>and Tan, Mei Yih and Lai, Shang-Hong and Chan, Chee Seng and Zach, Christopher},<br/>
+                  <span class="tab"></span>booktitle={2022 26th International Conference on Pattern Recognition (ICPR)},<br/>
+                  <span class="tab"></span>title={Extremely Low-Light Image Enhancement with Scene Text Restoration},<br/> 
+                  <span class="tab"></span>year={2022},<br/>
+                  <span class="tab"></span>pages={317-323}}
+                </span>
+              </p>
+            </div>
+        </div>
+        <div class="col d-none d-sm-block"></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<footer>
+  <div class="jumbotron jumbotron-fluid bg-light">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col d-none d-sm-block"></div>
+        <div class="col-xs-12 col-md-8">
+          <i class="fa-regular fa-copyright"></i> 2023 Universiti Malaya. Built with Bootstrap. Inspired by 
+          <a href="https://github.com/nerfies/nerfies.github.io" target="_blank">nerfies.github.io</a>.  
+        </div>
+        <div class="col d-none d-sm-block"></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</html>
