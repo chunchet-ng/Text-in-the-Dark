@@ -24,11 +24,20 @@ function toggle_div(div) {
   }
 }
 
-function copy_text() {
-  var copyText = document.getElementById("bibtex");
-  var btn = document.getElementById("bibtex_btn");
-  var icon_div = document.getElementById("icon_div");
-  var bibtex_div = document.getElementById("bibtex_div");
+function copy_text(name) {
+
+  if (name == 'old') {
+    var copyText = document.getElementById("bibtex_old");
+    var btn = document.getElementById("bibtex_btn_old");
+    var icon_div = document.getElementById("icon_div_old");
+    var bibtex_div = document.getElementById("bibtex_div_old");
+  }
+  else {
+    var copyText = document.getElementById("bibtex_new");
+    var btn = document.getElementById("bibtex_btn_new");
+    var icon_div = document.getElementById("icon_div_new");
+    var bibtex_div = document.getElementById("bibtex_div_new");
+  }
 
   const check_icon = document.createElement('i');
   check_icon.classList.add('fa-solid');
