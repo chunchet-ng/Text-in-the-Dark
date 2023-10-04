@@ -92,7 +92,7 @@ If you wish to cite the paper published at ICPR 2022, [Extremely Low-Light Image
   pages={317-323}}
 ```
 
-If you wish to cite the lastest version of Text in the Dark dataset and our proposed method:
+If you wish to cite the latest version of Text in the Dark dataset and our proposed method:
 
 > ***Our paper is currently under review. We will update this section when it is published.***
 
