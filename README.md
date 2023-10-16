@@ -1,4 +1,6 @@
-# Text in the Dark
+# Text in the Dark (Official Site)
+
+Released on September 16, 2023
 
 Official repository of the paper: "Text in the Dark: Extremely Low-Light Text Image
 Enhancement"
