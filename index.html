@@ -8,16 +8,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Text in the Dark: Extremely Low-Light Text Image Enhancement</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-02L1HZR2B9"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-PYVRSFMDRL');
-  </script> -->
+  
+    gtag('config', 'G-02L1HZR2B9');
+  </script>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -128,9 +127,10 @@
       <div class="row">
         <div class="col-3 d-none d-sm-block"></div>
         <div class="col-xs-12 col-md-6 d-grid gap-2 d-md-block text-center">
-            <a class="btn btn-outline-primary m-1">
+            <a class="btn btn-outline-primary m-1"
+              href="https://www.sciencedirect.com/science/article/abs/pii/S0923596524001231" target="_blank">
                 <i class="fa-solid fa-file-pdf"></i>
-                Paper (Under Review)
+                Paper
             </a>
             <a class="btn btn-outline-primary m-1"
               href="https://github.com/chunchet-ng/Text-in-the-Dark" target="_blank">
@@ -154,14 +154,20 @@
         <div class="col d-none d-sm-block"></div>
         <div class="col-xs-12 col-md-8">
           <h2 class="text-center title">Abstract</h1>
-          <p class="text-start">Text extraction in extremely low-light images is challenging. Although existing low-light image enhancement methods 
-            can enhance images as preprocessing before text extraction, they do not focus on scene text. Further research is also hindered by the 
-            lack of extremely low-light text datasets. Thus, we propose a novel extremely low-light image enhancement framework with an edge-aware 
-            attention module to focus on scene text regions. Our method is trained with text detection and edge reconstruction losses to emphasize 
-            low-level scene text features. Additionally, we present a Supervised Deep Curve Estimation model to synthesize extremely low-light 
-            images based on the public ICDAR15 (IC15) dataset. We also labeled texts in the extremely low-light See In the Dark (SID) and ordinary 
-            LOw-Light (LOL) datasets to benchmark extremely low-light scene text tasks. Extensive experiments prove our model outperforms 
-            state-of-the-art methods on all datasets.</p>
+          <p class="text-start">Extremely low-light text images pose significant challenges for scene text detection. Existing methods enhance these
+          images using low-light image enhancement techniques before text detection. However, they fail to address the importance
+          of low-level features, which are essential for optimal performance in downstream scene text tasks. Further research is
+          also limited by the scarcity of extremely low-light text datasets. To address these limitations, we propose a novel,
+          text-aware extremely low-light image enhancement framework. Our approach first integrates a Text-Aware Copy-Paste
+          (Text-CP) augmentation method as a preprocessing step, followed by a dual-encoder-decoder architecture enhanced with
+          Edge-Aware attention modules. We also introduce text detection and edge reconstruction losses to train the model to
+          generate images with higher text visibility. Additionally, we propose a Supervised Deep Curve Estimation
+          (Supervised-DCE) model for synthesizing extremely low-light images, allowing training on publicly available scene text
+          datasets such as IC15. To further advance this domain, we annotated texts in the extremely low-light See In the Dark
+          (SID) and ordinary LOw-Light (LOL) datasets. The proposed framework is rigorously tested against various traditional and
+          deep learning-based methods on the newly labeled SID-Sony-Text, SID-Fuji-Text, LOL-Text, and synthetic extremely
+          low-light IC15 datasets. Our extensive experiments demonstrate notable improvements in both image enhancement and scene
+          text tasks, showcasing the model's efficacy in text detection under extremely low-light conditions.</p>
         </div>
         <div class="col d-none d-sm-block"></div>
       </div>
@@ -173,21 +179,205 @@
       <div class="row">
         <div class="col d-none d-sm-block"></div>
         <div class="col-xs-12 col-md-8">
+          <h2 class="text-center title">Text in the Dark Dataset</h1>
+          <p class="text-start">In order to deal with the lack of low-light scene text datasets, this work has proposed a
+            new large-scale low-light OCR dataset called Text in the Dark. The images used in the Text in the Dark dataset 
+            are sourced from two commonly used low-light datasets: the extremely low-light See in the Dark (SID) dataset
+            and the ordinary Low-Light (LOL) dataset. Specifically, the SID dataset has two subsets:
+            SID-Sony, captured by Sony 𝛼7S II, and SID-Fuji, captured by Fujifilm X-T2. In short, Text in the Dark 
+            dataset consists of three subsets, namely SID-Sony-Text, SID-Fuji-Text and LOL-Text.
+            We show the annotated image of each subset in the following figures:</p>
+          <div class="row text-center">
+            <div class="col-md-4">
+              <figure class="figure">
+                <img src="static/images/sony_text_00063_00_10s.png" class="figure-img img-fluid rounded">
+                <figcaption class="figure-caption">SID-Sony-Text.</figcaption>
+              </figure>
+            </div>
+
+            <div class="col-md-4">
+              <figure class="figure">
+                <img src="static/images/fuji_text_00050_00_10s.png" class="figure-img img-fluid rounded">
+                <figcaption class="figure-caption">SID-Fuji-Text.</figcaption>
+              </figure>
+            </div>
+          
+            <div class="col-md-4">
+              <figure class="figure">
+                <img src="static/images/lol_text_det_663.png" class="figure-img img-fluid rounded">
+                <figcaption class="figure-caption">LOL-Text.</figcaption>
+              </figure>
+            </div>
+          </div>
+          <p class="text-start"></p>In this work, we included 878/810 short-exposure images
+          and 211/176 long-exposure images at a resolution of 4240x2832/6000x4000
+          from SID-Sony and SID-Fuji, respectively. Besides, the LOL dataset provides low/normal-light image pairs taken
+          from real scenes by controlling exposure time and ISO. There are 485 and 15
+          images at a resolution of 600x400 in the training and test sets. We closely annotated 
+          text instances in the SID and LOL datasets following the common ICDAR15 standard. 
+          Statistics of Text in the Dark dataset are as follow:</p>
+          <div class="row text-center">
+            <div class="col-md-12">
+              <figure class="figure">
+                <img src="static/images/stats.png" class="figure-img img-fluid rounded">
+                <figcaption class="figure-caption">Detailed statistics of the Text in the Dark dataset.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="col d-none d-sm-block"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="jumbotron jumbotron-fluid bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col d-none d-sm-block"></div>
+        <div class="col-xs-12 col-md-8">
+          <h2 class="text-center title">Extremely Low-Light Text Image Enhancement</h1>
+          <p class="text-start">Our novel image enhancement model consists of a U-Net accommodating extremely low-light images and edge maps using two
+          independent encoders. During model training, instead of channel attention, the encoded edges guide the spatial attention
+          sub-module in the proposed Edge-Aware Attention (Edge-Att) to attend to edge pixels related to text representations. Besides the image
+          enhancement losses, our model incorporates text detection and edge reconstruction losses into the training process. This
+          integration effectively guides the model's attention towards text-related features and regions, facilitating improved
+          image textual content analysis. As a pre-processing step, we introduced a novel augmentation technique called Text-Aware Copy Paste (Text-CP) to
+          increase the presence of non-overlapping and unique text instances in training images, thereby promoting comprehensive
+          learning of text representations.
+          </p>
+          <div class="row text-center">
+            <div class="col-md-12">
+              <figure class="figure">
+                <img src="static/images/unet.png" class="figure-img img-fluid rounded">
+                <figcaption class="figure-caption">Illustration of the architecture of proposed Extremely Low-Light Text Image Enhancement framework.</figcaption>
+              </figure>
+            </div>
+          </div>
+          <p class="text-start">The figure below highlights two core modules of our frameworks, the edge decoder and Edge-Att.
+            These two modules enable the framework to attend to rich images and edge features simultaneously,
+            which led to significant H-Mean improvement.
+            Subfigure (a): Visual representation of our edge decoder, wherein A and B represent the
+            output from the corresponding convolution blocks in Figure 2 and S denotes the scaling
+            of the image. Subfigure (b): Illustration of the proposed Edge-Aware Attention module.
+          </p>
+          <div class="row text-center">
+            <div class="col-md-12">
+              <figure class="figure">
+                <img src="static/images/edge_decoder_psa_combine.png" class="figure-img img-fluid rounded">
+                <figcaption class="figure-caption">Illustration of edge decoder and Edge-Att modules.</figcaption>
+              </figure>
+            </div>
+          </div>
+          
+          <p class="text-start">We also propose a novel data augmentation method, Text-CP. 
+            It considers each text box's location and size by leveraging uniform and Gaussian distributions derived from the dataset, as shown below:</p>
+          <div class="row text-center">
+            <div class="col-md-12">
+              <figure class="figure">
+                <img src="static/images/text_cp.png" class="figure-img img-fluid rounded">
+                <figcaption class="figure-caption">Illustration of Text-CP module.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="col d-none d-sm-block"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col d-none d-sm-block"></div>
+        <div class="col-xs-12 col-md-8">
+          <h2 class="text-center title">Experiment Results</h1>
+          <p class="text-start">All low-light image enhancement methods are
+            trained and tested on the datasets detailed in Section 5. They are then
+            evaluated in terms of intensity metrics (PSNR, SSIM), perceptual similarity (LPIPS), and text detection (H-Mean). 
+            For the SID-Sony-Text, SIDFuji-Text, and LOL-Text datasets, which are annotated with text bounding boxes only, 
+            we used well-known and commonly used scene text detectors (CRAFT and PAN) to analyze the enhanced images.
+            The table below shows the quantitative results of PSNR, SSIM, LPIPS, and text detection H-Mean for
+            low-light image enhancement methods on SID-Sony-Text, SID-Fuji-Text, and LOL-Text
+            datasets. Please note that TRAD, ZSL, UL, and SL stand for traditional methods, zeroshot learning, 
+            unsupervised learning, and supervised learning respectively. Scores in bold
+            are the best of all.</p>
+          <div class="row text-center">
+            <div class="col-md-12">
+              <figure class="figure">
+                <img src="static/images/quanti_res.png" class="figure-img img-fluid rounded">
+                <figcaption class="figure-caption">Quantitative result table.</figcaption>
+              </figure>
+            </div>
+          </div>
+          <p class="text-start">In the following figure, we show the comparison with state-of-the-art methods on the SID-Sony-Text dataset.
+            The figure is arranged in the following manner: for each column, the first row displays enhanced images
+            marked with <span class="text-primary">blue boxes</span> as regions of interest. The second row displays zoomed-in regions
+            of enhanced images overlaid with <span class="text-danger">red text detection boxes</span> from CRAFT. Column (a)
+            displays the low-light image. Columns (b) to (o) show image enhancement results from all
+            related methods. The last cell displays ground truth images.</p>
+          <div class="row text-center">
+            <div class="col-md-12">
+              <figure class="figure">
+                <img src="static/images/quali_res.png" class="figure-img img-fluid rounded">
+                <figcaption class="figure-caption">Quanlitative result figure.</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <p class="text-start">We show that while GAN-enhanced images tend to be less noisy, the text
+            regions are blurry, making text detection challenging. Moreover, our model
+            achieves the highest PSNR and SSIM scores on both SID-Sony-Text and
+            SID-Fuji-Text datasets, showing that our enhanced images are the closest to
+            the image quality of ground truth images. In short, better text detection is
+            achieved on our enhanced images through the improvement of overall image
+            quality and preservation of fine details within text regions.</p>
+        </div>
+        <div class="col d-none d-sm-block"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="jumbotron jumbotron-fluid bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col d-none d-sm-block"></div>
+        <div class="col-xs-12 col-md-8">
           <h2 class="text-center title">BibTeX</h1>
           <p class="text-start">If you wish to cite the ICPR 2022 Extremely Low-Light Image Enhancement with Scene Text Restoration paper:</p>
-            <div class="text-primary border border-primary rounded p-3">
+            <div class="text-primary border border-primary rounded p-3" id="bibtex_div_old">
               <p class="m-0">
-                <button class="btn btn-primary float-end ms-2" onclick="copy_text()">
-                  <i class="fa-solid fa-copy"></i>
+                <button class="btn btn-primary float-end ms-2" onclick="copy_text('old')" id="bibtex_btn_old">
+                  <div id="icon_div_old"><i class="fa-solid fa-copy"></i></div>
                 </button>
-                <span id="bibtex">
-                @inproceedings{icdar2021_ictext,<br/>
+                <span id="bibtex_old">
+                @inproceedings{icpr2022_ellie,<br/>
                   <span class="tab"></span>author={Hsu, Po-Hao and Lin, Che-Tsung and Ng, Chun Chet and Long Kew, Jie<br/>
                   <span class="tab"></span>and Tan, Mei Yih and Lai, Shang-Hong and Chan, Chee Seng and Zach, Christopher},<br/>
                   <span class="tab"></span>booktitle={2022 26th International Conference on Pattern Recognition (ICPR)},<br/>
                   <span class="tab"></span>title={Extremely Low-Light Image Enhancement with Scene Text Restoration},<br/> 
                   <span class="tab"></span>year={2022},<br/>
                   <span class="tab"></span>pages={317-323}}
+                </span>
+              </p>
+            </div>
+          <p class="text-start pt-3">If you wish to cite the latest version of the Text in the Dark dataset and our proposed ELITE framework:</p>
+            <div class="text-primary border border-primary rounded p-3" id="bibtex_div_new">
+              <p class="mb-3">
+                <button class="btn btn-primary float-end ms-2" onclick="copy_text('new')" id="bibtex_btn_new">
+                  <div id="icon_div_new"><i class="fa-solid fa-copy"></i></div>
+                </button>
+                <span id="bibtex_new">
+                  @article{LIN2025117222,<br />
+                    <span class="tab"></span>title = {Text in the dark: Extremely low-light text image enhancement},<br />
+                    <span class="tab"></span>journal = {Signal Processing: Image Communication},<br />
+                    <span class="tab"></span>volume = {130},<br />
+                    <span class="tab"></span>pages = {117222},<br />
+                    <span class="tab"></span>year = {2025},<br />
+                    <span class="tab"></span>issn = {0923-5965},<br />
+                    <span class="tab"></span>doi = {https://doi.org/10.1016/j.image.2024.117222},<br />
+                    <span class="tab"></span>url = {https://www.sciencedirect.com/science/article/pii/S0923596524001231},<br />
+                    <span class="tab"></span>author = {Che-Tsung Lin and Chun Chet Ng and Zhi Qin Tan and Wan Jun Nah and Xinyu Wang and<br />
+                    <span class="tab"></span>Jie Long Kew and Pohao Hsu and Shang Hong Lai and Chee Seng Chan and Christopher Zach}}
                 </span>
               </p>
             </div>
@@ -200,12 +390,12 @@
 </body>
 
 <footer>
-  <div class="jumbotron jumbotron-fluid bg-light">
+  <div class="jumbotron jumbotron-fluid">
     <div class="container text-center">
       <div class="row">
         <div class="col d-none d-sm-block"></div>
         <div class="col-xs-12 col-md-8">
-          <i class="fa-regular fa-copyright"></i> 2023 Universiti Malaya. Built with Bootstrap. Inspired by 
+          <i class="fa-regular fa-copyright"></i> 2024 Universiti Malaya. Built with Bootstrap. Inspired by 
           <a href="https://github.com/nerfies/nerfies.github.io" target="_blank">nerfies.github.io</a>.  
         </div>
         <div class="col d-none d-sm-block"></div>
