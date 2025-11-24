@@ -1,0 +1,46 @@
+# general paths
+project_path: ./Text-in-the-Dark
+data_path: ./dataset/Fuji
+
+# unet settings
+mix_train: False
+patch_size: 512
+target_size: 4256
+learning_rate: 0.0001
+scheduler_gamma: 0.1
+edge_loss_w: 0.2125
+mae_loss_w: 0.2125
+ms_ssim_loss_w: 0.15
+text_loss_w: 0.425
+train_dataset_type: fuji
+test_dataset_type: fuji
+
+# craft settings
+eval_dataset_type: icdar15
+file_prefix: res_img_
+text_threshold: 0.7
+link_threshold: 0.4
+low_text: 0.4
+craft_pretrained_model: $(project_path)/utils/CRAFTpytorch/craft_mlt_25k.pth
+
+# rcf settings
+rcf_pretrained_model: $(project_path)/utils/RCFpytorch/bsds500_pascal_model.pth
+
+# data paths
+gt_path: ./sid_text/version_2/fuji/test/fuji_test_short.zip
+train_list_file: $(data_path)/Fuji_train_list.txt
+train_input_dir: $(data_path)/train/short/
+train_gt_dir: $(data_path)/train/long/
+train_edge_dir: $(data_path)/train/rcf_manual_png_2k/
+train_gt_edge_dir: $(data_path)/train/canny_gt/
+gt_txt_path: ./sid_text/version_2/fuji/train/long
+gt_cropped_dir: None
+input_cropped_dir: None
+edge_cropped_dir: None
+gt_edge_cropped_dir: None
+
+test_list_file: $(data_path)/Fuji_test_list.txt
+test_input_dir: $(data_path)/test/short/
+test_gt_dir: $(data_path)/test/long/
+test_edge_dir: $(data_path)/test/rcf_manual_png_2k/
+test_gt_edge_dir: $(data_path)/test/canny_gt/

@@ -1,0 +1,44 @@
+# general paths
+project_path: ./Text-in-the-Dark
+data_path: ./dataset/IC15_004
+
+# unet settings
+mix_train: False
+patch_size: 512
+target_size: 1280
+learning_rate: 0.0001
+scheduler_gamma: 0.1
+edge_loss_w: 0.2125
+mae_loss_w: 0.2125
+ms_ssim_loss_w: 0.15
+text_loss_w: 0.425
+train_dataset_type: icdar15
+test_dataset_type: icdar15
+
+# craft settings
+eval_dataset_type: icdar15
+file_prefix: res_img_
+text_threshold: 0.7
+link_threshold: 0.4
+low_text: 0.4
+craft_pretrained_model: $(project_path)/utils/CRAFTpytorch/craft_ic15_20k.pth
+# craft_pretrained_model: $(project_path)/utils/CRAFTpytorch/craft_mlt_25k.pth
+
+# data paths
+gt_path: ./dataset/IC15_004/icdar_gt.zip
+train_list_file: $(data_path)/input_image_train.txt
+train_input_dir: $(data_path)/train/input_image/
+train_gt_dir: $(data_path)/train/gt_image/
+train_edge_dir: $(data_path)/train/rcf_png_5k/
+train_gt_edge_dir: $(data_path)/train/canny_gt/
+gt_txt_path: ./sid_text/version_1/icdar15/train
+gt_cropped_dir: None
+input_cropped_dir: None
+edge_cropped_dir: None
+gt_edge_cropped_dir: None
+
+test_list_file: $(data_path)/input_image_test.txt
+test_input_dir: $(data_path)/test/input_image/
+test_gt_dir: $(data_path)/test/gt_image/
+test_edge_dir: $(data_path)/test/rcf_png_5k/
+test_gt_edge_dir: $(data_path)/test/canny_gt/

@@ -1,0 +1,43 @@
+# general paths
+project_path: ./Text-in-the-Dark
+data_path: ./dataset/LOL
+
+# unet settings
+mix_train: False
+patch_size: 608
+target_size: 600
+learning_rate: 0.0001
+scheduler_gamma: 0.1
+edge_loss_w: 0.2125
+mae_loss_w: 0.2125
+ms_ssim_loss_w: 0.15
+text_loss_w: 0.425
+train_dataset_type: lol
+test_dataset_type: lol
+
+# craft settings
+eval_dataset_type: icdar15
+file_prefix: res_img_
+text_threshold: 0.7
+link_threshold: 0.4
+low_text: 0.4
+craft_pretrained_model: $(project_path)/utils/CRAFTpytorch/craft_ic15_20k.pth
+
+# data paths
+gt_path: ./sid_text/LOL/detection/lol_det_test.zip
+train_list_file: $(data_path)/LOL_train_list.txt
+train_input_dir: $(data_path)/our485/low/
+train_gt_dir: $(data_path)/our485/high/
+train_edge_dir: $(data_path)/our485/rt_md_rcf_manual_png_2k/
+train_gt_edge_dir: $(data_path)/our485/canny_gt/
+gt_txt_path: ./sid_text/LOL/detection/train
+gt_cropped_dir: None
+input_cropped_dir: None
+edge_cropped_dir: None
+gt_edge_cropped_dir: None
+
+test_list_file: $(data_path)/LOL_test_list.txt
+test_input_dir: $(data_path)/eval15/low/
+test_gt_dir: $(data_path)/eval15/high/
+test_edge_dir: $(data_path)/eval15/rt_md_rcf_manual_png_2k/
+test_gt_edge_dir: None
