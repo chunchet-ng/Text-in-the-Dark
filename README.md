@@ -16,8 +16,9 @@ Released On: December 20, 2024
 ## Abstract:
 Extremely low-light text images pose significant challenges for scene text detection. Existing methods enhance these images using low-light image enhancement techniques before text detection. However, they fail to address the importance of low-level features, which are essential for optimal performance in downstream scene text tasks. Further research is also limited by the scarcity of extremely low-light text datasets. To address these limitations, we propose a novel, text-aware extremely low-light image enhancement framework. Our approach first integrates a Text-Aware Copy-Paste (Text-CP) augmentation method as a preprocessing step, followed by a dual-encoder–decoder architecture enhanced with Edge-Aware attention modules. We also introduce text detection and edge reconstruction losses to train the model to generate images with higher text visibility. Additionally, we propose a Supervised Deep Curve Estimation (Supervised-DCE) model for synthesizing extremely low-light images, allowing training on publicly available scene text datasets such as IC15. To further advance this domain, we annotated texts in the extremely low-light See In the Dark (SID) and ordinary LOw-Light (LOL) datasets. The proposed framework is rigorously tested against various traditional and deep learning-based methods on the newly labeled SID-Sony-Text, SID-Fuji-Text, LOL-Text, and synthetic extremely low-light IC15 datasets. Our extensive experiments demonstrate notable improvements in both image enhancement and scene text tasks, showcasing the model’s efficacy in text detection under extremely low-light conditions.
 
-## Text in the Dark Dataset
-> ***The Text in the Dark dataset is released [here](https://bit.ly/text-in-the-dark).***
+## Text in the Dark Dataset ([download link](https://bit.ly/text-in-the-dark))
+![Teaser figure](TID.png)
+
 
 The Text in the Dark dataset is created based on the combination of the following low light datasets:
 
