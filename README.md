@@ -1,3 +1,5 @@
+
+
 # Text in the Dark
 
 ###  Official repository of the paper: "Text in the Dark: Extremely Low-Light Text Image Enhancement"
@@ -87,7 +89,7 @@ cd Text-in-the-Dark
 
 # Create and activate the conda environment
 conda env create -f low_light_text.yml
-conda activate tid
+conda activate low
 ```
 
 ### Pretrained Models
